@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Halaman Login</title> 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/coba.css" rel="stylesheet">
   </head>
   <body>
   <div>
   	 <div align="right">
-	<img src="gambar/medex.png" width="150" height="150" border="5" />
+	<img src="gambar/medex.png" width="150" height="150" border="5" style="margin:20px;" />
   </div>
   <div align="center">
    <h2>Selamat Datang</h2>
@@ -79,7 +79,7 @@
 			?>
 			<div class="text-center forget">
                   <h4> <a href="">Lupa Password?</a><br><br>
-				   <a href="">Daftar</a></h4>
+				   <a href="daftar.php">Daftar</a></h4>
                 </div>
         </div>
     </div>
