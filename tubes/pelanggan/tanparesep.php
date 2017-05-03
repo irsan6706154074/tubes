@@ -96,7 +96,7 @@ if ( !isset($_SESSION['nama']) || ($_SESSION['status'] != 'pelanggan' ) ) {
 					$i++;
 				?>
 				<h5><td><p align="center"><?php echo $data['nama_obat']; ?><br>
-				<img src="./../resep/<?php echo $data['resobat'];?>" height="160" width="160" style="margin:5px;"/><br>
+				<img src="./../obat/<?php echo $data['resobat'];?>" height="160" width="160" style="margin:5px;"/><br>
 				Harga : <?php echo $data['harga']; ?><br>
 				<form method="post" action="datalistobat.php">
 				 <center><input type="submit" name="submit" value="Pesan Obat"></center>
