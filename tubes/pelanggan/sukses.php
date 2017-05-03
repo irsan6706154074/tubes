@@ -8,6 +8,7 @@ include("./../koneksi.php");
  $result=mysqli_query($kon,$total);
  while($baris=mysqli_fetch_array($result))
 {
+	
 	$no=$baris['harga'];
 }
 $harga=$jumlah*$no;
