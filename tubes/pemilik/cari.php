@@ -78,6 +78,21 @@ if ( !isset($_SESSION['nama']) || ($_SESSION['status'] != 'pemilik' ) ) {
 													include("./../koneksi.php");
 													$awal = $_POST['awal'];
 													$akhir = $_POST['akhir'];
+										
+													$query="select * from rekapdata where tanggalrekap BETWEEN $awal AND $akhir";
+													$result = mysqli_query($kon,$query);
+													while($baris = mysqli_fetch_array($result))
+													{
+														?>
+														<tr>
+														<td> <?php echo$baris['tanggalrekap']?></td>
+														<td> <?php echo$baris['obatmasuk']?></td>
+														<td> <?php echo$baris['obatkeluar']?></td>
+														</tr>
+														
+														<?php
+													}
+													
 													
 													$query2="select sum(totalharga) as total from transaksi where tgl_transaksi BETWEEN $awal AND $akhir";
 													$result2=mysqli_query($kon,$query2);
