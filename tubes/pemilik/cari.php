@@ -1,5 +1,6 @@
  <?php
 session_start();
+//pemilik login
 if ( !isset($_SESSION['nama']) || ($_SESSION['status'] != 'pemilik' ) ) {
  
 	header('location:./../login.php');
