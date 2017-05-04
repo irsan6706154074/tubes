@@ -79,7 +79,7 @@ if ( !isset($_SESSION['nama']) || ($_SESSION['status'] != 'pemilik' ) ) {
 													$awal = $_POST['awal'];
 													$akhir = $_POST['akhir'];
 										
-													$query="select * from rekapdata where tanggalrekap BETWEEN $awal AND $akhir";
+													$query="select * from rekapdata where tanggalrekap BETWEEN $awal AND $akhir"; //menampilkan
 													$result = mysqli_query($kon,$query);
 													while($baris = mysqli_fetch_array($result))
 													{
